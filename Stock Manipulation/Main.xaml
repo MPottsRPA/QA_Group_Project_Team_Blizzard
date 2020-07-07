@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="922.4,4340.8" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:bec="clr-namespace:BalaReva.Excel.Charts;assembly=BalaReva.Excel" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="922.4,4840.8" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:bec="clr-namespace:BalaReva.Excel.Charts;assembly=BalaReva.Excel" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="23">
       <x:String>System.Activities</x:String>
@@ -47,27 +47,27 @@
       <AssemblyReference>UiPath.CV</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Stock Graph Manipulation" sap:VirtualizedContainerService.HintSize="744,4176" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence DisplayName="Stock Graph Manipulation" sap:VirtualizedContainerService.HintSize="727.2,4676" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:StartProcess Arguments="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Open Blizzard Database" FileName="C:\Users\helen\Desktop\Group Project\Blizzard Database.xlsx" sap:VirtualizedContainerService.HintSize="702.4,88" sap2010:WorkflowViewState.IdRef="StartProcess_1" />
-    <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Inside Blizzard Database" sap:VirtualizedContainerService.HintSize="702.4,3674.4" sap2010:WorkflowViewState.IdRef="WindowScope_1" InformativeScreenshot="f62c80c40e807759623700a23e87c510" Selector="&lt;wnd app='excel.exe' cls='XLMAIN' title='Blizzard Database - Excel' /&gt;">
+    <ui:StartProcess Arguments="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Open Blizzard Database" FileName="C:\Users\helen\Desktop\Group Project\Blizzard Database.xlsx" sap:VirtualizedContainerService.HintSize="685.6,88" sap2010:WorkflowViewState.IdRef="StartProcess_1" />
+    <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Inside Blizzard Database" sap:VirtualizedContainerService.HintSize="685.6,4174.4" sap2010:WorkflowViewState.IdRef="WindowScope_1" InformativeScreenshot="f62c80c40e807759623700a23e87c510" Selector="&lt;wnd app='excel.exe' cls='XLMAIN' title='Blizzard Database - Excel' /&gt;">
       <ui:WindowScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="652,3527.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="652,4027.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="610.4,22.4" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
-            <Sequence DisplayName="Company Array" sap:VirtualizedContainerService.HintSize="610.4,3279.2" sap2010:WorkflowViewState.IdRef="Sequence_92">
+            <Sequence DisplayName="Company Array" sap:VirtualizedContainerService.HintSize="610.4,3779.2" sap2010:WorkflowViewState.IdRef="Sequence_92">
               <Sequence.Variables>
                 <Variable x:TypeArguments="s:String[]" Name="companyArray" />
                 <Variable x:TypeArguments="x:Int32" Name="count" />
@@ -76,6 +76,7 @@
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <Assign sap:VirtualizedContainerService.HintSize="568.8,60" sap2010:WorkflowViewState.IdRef="Assign_1">
@@ -83,7 +84,7 @@
                   <OutArgument x:TypeArguments="s:String[]">[companyArray]</OutArgument>
                 </Assign.To>
                 <Assign.Value>
-                  <InArgument x:TypeArguments="s:String[]">[{"Take-Two", "EA"}]</InArgument>
+                  <InArgument x:TypeArguments="s:String[]">[{"Take-Two", "EA", "Konami"}]</InArgument>
                 </Assign.Value>
               </Assign>
               <Assign sap:VirtualizedContainerService.HintSize="568.8,60" sap2010:WorkflowViewState.IdRef="Assign_2">
@@ -102,9 +103,9 @@
                   <InArgument x:TypeArguments="x:Int32">1</InArgument>
                 </Assign.Value>
               </Assign>
-              <ui:InterruptibleWhile DisplayName="While" sap:VirtualizedContainerService.HintSize="568.8,2886.4" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+              <ui:InterruptibleWhile DisplayName="While" sap:VirtualizedContainerService.HintSize="568.8,3386.4" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
                 <ui:InterruptibleWhile.Body>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="533.6,2719.2" sap2010:WorkflowViewState.IdRef="Sequence_139">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="533.6,3219.2" sap2010:WorkflowViewState.IdRef="Sequence_139">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:String" Name="companySheet" />
                       <Variable x:TypeArguments="x:Int32" Name="tableNum" />
@@ -112,6 +113,7 @@
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <Assign sap:VirtualizedContainerService.HintSize="492,60" sap2010:WorkflowViewState.IdRef="Assign_3">
@@ -130,13 +132,13 @@
                         <InArgument x:TypeArguments="x:Int32">[count + 1]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'BlizzardD Xlmain'" sap:VirtualizedContainerService.HintSize="492,2226.4" sap2010:WorkflowViewState.IdRef="WindowScope_45" InformativeScreenshot="48f205d049c56107ceb820279d039941" Selector="&lt;wnd app='excel.exe' cls='XLMAIN' title='Blizzard Database - Excel' /&gt;">
+                    <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'BlizzardD Xlmain'" sap:VirtualizedContainerService.HintSize="492,2726.4" sap2010:WorkflowViewState.IdRef="WindowScope_45" InformativeScreenshot="48f205d049c56107ceb820279d039941" Selector="&lt;wnd app='excel.exe' cls='XLMAIN' title='Blizzard Database - Excel' /&gt;">
                       <ui:WindowScope.Body>
                         <ActivityAction x:TypeArguments="x:Object">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Create Graphs" sap:VirtualizedContainerService.HintSize="458.4,2079.2" sap2010:WorkflowViewState.IdRef="Sequence_138">
+                          <Sequence DisplayName="Create Graphs" sap:VirtualizedContainerService.HintSize="458.4,2579.2" sap2010:WorkflowViewState.IdRef="Sequence_138">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="x:String" Name="openBox" />
                               <Variable x:TypeArguments="x:String" Name="highBox" />
@@ -172,7 +174,7 @@
                                       </ui:CursorPosition>
                                     </ui:Click.CursorPosition>
                                     <ui:Click.Target>
-                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="73ce4c25-3c7e-4ae4-b3b7-bb2d34a198b0" InformativeScreenshot="99a3c1c02d68b93fd907f78609c8cdc5" Selector="&lt;uia automationid='Blizzard Database.xlsx' cls='ExcelBookTabControl' name='Blizzard Database' /&gt;&#xD;&#xA;&lt;uia automationid='SheetTab' name='{{companySheet}}' role='Sheet Tab' /&gt;&#xD;&#xA;">
+                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="73ce4c25-3c7e-4ae4-b3b7-bb2d34a198b0" InformativeScreenshot="99a3c1c02d68b93fd907f78609c8cdc5" Selector="&lt;uia automationid='Blizzard Database.xlsx' cls='ExcelBookTabControl' name='Blizzard Database' /&gt;&#xA;&lt;uia automationid='SheetTab' name='{{companySheet}}' role='Sheet Tab' /&gt;&#xA;">
                                         <ui:Target.TimeoutMS>
                                           <InArgument x:TypeArguments="x:Int32" />
                                         </ui:Target.TimeoutMS>
@@ -185,7 +187,7 @@
                                 </Sequence>
                               </ui:OnUiElementAppear.Body>
                               <ui:OnUiElementAppear.Target>
-                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2b3bef40-9d38-4768-b8d7-949c8194e20a" InformativeScreenshot="a21e159d3c77556a437cf0f73f94b776" Selector="&lt;uia automationid='Blizzard Database.xlsx' cls='ExcelBookTabControl' name='Blizzard Database' /&gt;&#xD;&#xA;&lt;uia automationid='SheetTab' name='{{companySheet}}' role='Sheet Tab' /&gt;&#xD;&#xA;">
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2b3bef40-9d38-4768-b8d7-949c8194e20a" InformativeScreenshot="a21e159d3c77556a437cf0f73f94b776" Selector="&lt;uia automationid='Blizzard Database.xlsx' cls='ExcelBookTabControl' name='Blizzard Database' /&gt;&#xA;&lt;uia automationid='SheetTab' name='{{companySheet}}' role='Sheet Tab' /&gt;&#xA;">
                                   <ui:Target.TimeoutMS>
                                     <InArgument x:TypeArguments="x:Int32" />
                                   </ui:Target.TimeoutMS>
@@ -227,7 +229,7 @@
                                     </ui:CursorPosition>
                                   </ui:Click.CursorPosition>
                                   <ui:Click.Target>
-                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3a6d2bdb-bb90-426d-bae9-821e4622f269" InformativeScreenshot="93d025ec5ea786abbdb46b9b957bd041" Selector="&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&#xD;&#xA;&lt;uia name='Table{{tableNum}}' role='table' /&gt;&#xD;&#xA;&lt;uia name='&amp;quot;A&amp;quot; 3' role='header item' tableCol='0' tableRow='0' /&gt;&#xD;&#xA;">
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3a6d2bdb-bb90-426d-bae9-821e4622f269" InformativeScreenshot="93d025ec5ea786abbdb46b9b957bd041" Selector="&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&#xA;&lt;uia name='Table{{tableNum}}' role='table' /&gt;&#xA;&lt;uia name='&amp;quot;A&amp;quot; 3' role='header item' tableCol='0' tableRow='0' /&gt;&#xA;">
                                       <ui:Target.TimeoutMS>
                                         <InArgument x:TypeArguments="x:Int32" />
                                       </ui:Target.TimeoutMS>
@@ -239,7 +241,7 @@
                                 </ui:Click>
                                 <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey 'header item  &quot;A&quot; 3'" sap:VirtualizedContainerService.HintSize="333.6,156" sap2010:WorkflowViewState.IdRef="SendHotkey_20" Key="a" KeyModifiers="Ctrl">
                                   <ui:SendHotkey.Target>
-                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6592f027-a53f-4ef7-b7be-5872772aefd1" InformativeScreenshot="93d025ec5ea786abbdb46b9b957bd041" Selector="&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&#xD;&#xA;&lt;uia name='Table{{tableNum}}' role='table' /&gt;&#xD;&#xA;&lt;uia name='&amp;quot;A&amp;quot; 3' role='header item' tableCol='0' tableRow='0' /&gt;&#xD;&#xA;">
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6592f027-a53f-4ef7-b7be-5872772aefd1" InformativeScreenshot="93d025ec5ea786abbdb46b9b957bd041" Selector="&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&#xA;&lt;uia name='Table{{tableNum}}' role='table' /&gt;&#xA;&lt;uia name='&amp;quot;A&amp;quot; 3' role='header item' tableCol='0' tableRow='0' /&gt;&#xA;">
                                       <ui:Target.TimeoutMS>
                                         <InArgument x:TypeArguments="x:Int32" />
                                       </ui:Target.TimeoutMS>
@@ -458,7 +460,7 @@
                                             </ui:CursorPosition>
                                           </ui:Click.CursorPosition>
                                           <ui:Click.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="03e8e12f-368e-4fde-8364-f5a0f9bdba2b" InformativeScreenshot="f0ef3636b6b08635789075fb3e83034a" Selector="&lt;wnd app='excel.exe' cls='XLMAIN' title='Blizzard Database - Excel' /&gt;&#xD;&#xA;&lt;uia idx='{{graphNum}}' name='Chart Area' role='Chart Element' /&gt;&#xD;&#xA;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="03e8e12f-368e-4fde-8364-f5a0f9bdba2b" InformativeScreenshot="f0ef3636b6b08635789075fb3e83034a" Selector="&lt;wnd app='excel.exe' cls='XLMAIN' title='Blizzard Database - Excel' /&gt;&#xA;&lt;uia idx='{{graphNum}}' name='Chart Area' role='Chart Element' /&gt;&#xA;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -486,13 +488,13 @@
                                 </ui:WindowScope>
                               </Sequence>
                             </Sequence>
-                            <Sequence DisplayName="Price Line Graph" sap:VirtualizedContainerService.HintSize="416.8,488" sap2010:WorkflowViewState.IdRef="Sequence_109">
+                            <Sequence DisplayName="Price Line Graph" sap:VirtualizedContainerService.HintSize="416.8,68.8" sap2010:WorkflowViewState.IdRef="Sequence_109">
                               <Sequence.Variables>
                                 <Variable x:TypeArguments="ui:UiElement" Name="takeTwoTab" />
                               </Sequence.Variables>
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
@@ -899,7 +901,7 @@
                                 </ui:WindowScope>
                                 <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'Chart Element'" sap:VirtualizedContainerService.HintSize="333.6,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_16" Text="Price[k(enter)]">
                                   <ui:TypeInto.Target>
-                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="359f7e2a-697e-4731-8253-4b34dab4d2d5" InformativeScreenshot="45e7139e898230f9af927a177b53d8aa" Selector="&lt;uia idx='{{graphNum}}' name='Chart Area' role='Chart Element' /&gt;&#xD;&#xA;">
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="359f7e2a-697e-4731-8253-4b34dab4d2d5" InformativeScreenshot="45e7139e898230f9af927a177b53d8aa" Selector="&lt;uia idx='{{graphNum}}' name='Chart Area' role='Chart Element' /&gt;&#xA;">
                                       <ui:Target.TimeoutMS>
                                         <InArgument x:TypeArguments="x:Int32" />
                                       </ui:Target.TimeoutMS>
@@ -935,7 +937,7 @@
                                     </ui:CursorPosition>
                                   </ui:Click.CursorPosition>
                                   <ui:Click.Target>
-                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="81562bdd-bb2e-4277-b89c-90c0b2b950bf" InformativeScreenshot="f191c9678f4cdcc41181a4b8c238f96b" Selector="&lt;uia idx='{{graphNum}}' name='Chart Area' role='Chart Element' /&gt;&#xD;&#xA;">
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="81562bdd-bb2e-4277-b89c-90c0b2b950bf" InformativeScreenshot="f191c9678f4cdcc41181a4b8c238f96b" Selector="&lt;uia idx='{{graphNum}}' name='Chart Area' role='Chart Element' /&gt;&#xA;">
                                       <ui:Target.TimeoutMS>
                                         <InArgument x:TypeArguments="x:Int32" />
                                       </ui:Target.TimeoutMS>
@@ -947,7 +949,7 @@
                                 </ui:Click>
                                 <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey 'Chart Element'" sap:VirtualizedContainerService.HintSize="333.6,156" sap2010:WorkflowViewState.IdRef="SendHotkey_21" Key="x" KeyModifiers="Ctrl">
                                   <ui:SendHotkey.Target>
-                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c4752aa7-30e0-4bed-803a-5c0ca47e1f46" InformativeScreenshot="f369c2f5367f720c84ca406b08da58b3" Selector="&lt;uia idx='{{graphNum}}' name='Chart Area' role='Chart Element' /&gt;&#xD;&#xA;">
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c4752aa7-30e0-4bed-803a-5c0ca47e1f46" InformativeScreenshot="f369c2f5367f720c84ca406b08da58b3" Selector="&lt;uia idx='{{graphNum}}' name='Chart Area' role='Chart Element' /&gt;&#xA;">
                                       <ui:Target.TimeoutMS>
                                         <InArgument x:TypeArguments="x:Int32" />
                                       </ui:Target.TimeoutMS>
@@ -1011,19 +1013,9 @@
                                     </ui:Target>
                                   </ui:Click.Target>
                                 </ui:Click>
-                                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_DOWN" DelayMS="1000" DisplayName="Click 'Button  More'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_156" KeyModifiers="None" MouseButton="BTN_LEFT">
-                                  <ui:Click.CursorPosition>
-                                    <ui:CursorPosition Position="Center">
-                                      <ui:CursorPosition.OffsetX>
-                                        <InArgument x:TypeArguments="x:Int32" />
-                                      </ui:CursorPosition.OffsetX>
-                                      <ui:CursorPosition.OffsetY>
-                                        <InArgument x:TypeArguments="x:Int32" />
-                                      </ui:CursorPosition.OffsetY>
-                                    </ui:CursorPosition>
-                                  </ui:Click.CursorPosition>
-                                  <ui:Click.Target>
-                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b69a9542-d849-42c6-b37c-83c45c9e8324" InformativeScreenshot="8f9a5341ff4b6ab9df24108c781794ba" Selector="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='Format' /&gt;&lt;uia cls='NetUIChunk' name='Size' /&gt;&lt;uia cls='NetUIElement' helpText='Change the width of the shape or picture.' idx='1' /&gt;&lt;uia cls='NetUIRepeatButton' name='More' /&gt;">
+                                <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Type Into 'Spinner  Shape Width'" EmptyField="True" sap:VirtualizedContainerService.HintSize="333.6,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_24" Text="25[k(enter)]">
+                                  <ui:TypeInto.Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1d8b5f85-2df0-4f25-a599-8d222797cdac" InformativeScreenshot="67c8fa27f411937b52d2ca8689f028fe" Selector="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='Format' /&gt;&lt;uia cls='NetUIChunk' name='Size' /&gt;&lt;uia cls='NetUIElement' helpText='Change the width of the shape or picture.' idx='1' /&gt;&lt;uia cls='NetUIElement' name='Shape Width' /&gt;">
                                       <ui:Target.TimeoutMS>
                                         <InArgument x:TypeArguments="x:Int32" />
                                       </ui:Target.TimeoutMS>
@@ -1031,30 +1023,77 @@
                                         <InArgument x:TypeArguments="ui:WaitForReady" />
                                       </ui:Target.WaitForReady>
                                     </ui:Target>
-                                  </ui:Click.Target>
-                                </ui:Click>
-                                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Tab Item  Home'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_188" KeyModifiers="None" MouseButton="BTN_LEFT">
-                                  <ui:Click.CursorPosition>
-                                    <ui:CursorPosition Position="Center">
-                                      <ui:CursorPosition.OffsetX>
-                                        <InArgument x:TypeArguments="x:Int32" />
-                                      </ui:CursorPosition.OffsetX>
-                                      <ui:CursorPosition.OffsetY>
-                                        <InArgument x:TypeArguments="x:Int32" />
-                                      </ui:CursorPosition.OffsetY>
-                                    </ui:CursorPosition>
-                                  </ui:Click.CursorPosition>
-                                  <ui:Click.Target>
-                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1c73431d-6b76-4199-a0ca-bf88ab4c389f" InformativeScreenshot="12b9c385c03f720050b2dddab4d746b0" Selector="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIPanViewer' name='Ribbon Tabs' /&gt;&lt;uia cls='NetUIRibbonTab' name='Home' /&gt;">
-                                      <ui:Target.TimeoutMS>
-                                        <InArgument x:TypeArguments="x:Int32" />
-                                      </ui:Target.TimeoutMS>
-                                      <ui:Target.WaitForReady>
-                                        <InArgument x:TypeArguments="ui:WaitForReady" />
-                                      </ui:Target.WaitForReady>
-                                    </ui:Target>
-                                  </ui:Click.Target>
-                                </ui:Click>
+                                  </ui:TypeInto.Target>
+                                </ui:TypeInto>
+                                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="333.6,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_21">
+                                  <ui:CommentOut.Body>
+                                    <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416.8,161.6" sap2010:WorkflowViewState.IdRef="Sequence_142">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <Sequence DisplayName="Stupid Mouse Method" sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_141">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_DOWN" DelayMS="1000" DisplayName="Click 'Button  More'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_156" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                          <ui:Click.CursorPosition>
+                                            <ui:CursorPosition Position="Center">
+                                              <ui:CursorPosition.OffsetX>
+                                                <InArgument x:TypeArguments="x:Int32" />
+                                              </ui:CursorPosition.OffsetX>
+                                              <ui:CursorPosition.OffsetY>
+                                                <InArgument x:TypeArguments="x:Int32" />
+                                              </ui:CursorPosition.OffsetY>
+                                            </ui:CursorPosition>
+                                          </ui:Click.CursorPosition>
+                                          <ui:Click.Target>
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b69a9542-d849-42c6-b37c-83c45c9e8324" InformativeScreenshot="8f9a5341ff4b6ab9df24108c781794ba" Selector="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='Format' /&gt;&lt;uia cls='NetUIChunk' name='Size' /&gt;&lt;uia cls='NetUIElement' helpText='Change the width of the shape or picture.' idx='1' /&gt;&lt;uia cls='NetUIRepeatButton' name='More' /&gt;">
+                                              <ui:Target.TimeoutMS>
+                                                <InArgument x:TypeArguments="x:Int32" />
+                                              </ui:Target.TimeoutMS>
+                                              <ui:Target.WaitForReady>
+                                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                                              </ui:Target.WaitForReady>
+                                            </ui:Target>
+                                          </ui:Click.Target>
+                                        </ui:Click>
+                                        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Tab Item  Home'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_188" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                          <ui:Click.CursorPosition>
+                                            <ui:CursorPosition Position="Center">
+                                              <ui:CursorPosition.OffsetX>
+                                                <InArgument x:TypeArguments="x:Int32" />
+                                              </ui:CursorPosition.OffsetX>
+                                              <ui:CursorPosition.OffsetY>
+                                                <InArgument x:TypeArguments="x:Int32" />
+                                              </ui:CursorPosition.OffsetY>
+                                            </ui:CursorPosition>
+                                          </ui:Click.CursorPosition>
+                                          <ui:Click.Target>
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1c73431d-6b76-4199-a0ca-bf88ab4c389f" InformativeScreenshot="12b9c385c03f720050b2dddab4d746b0" Selector="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIPanViewer' name='Ribbon Tabs' /&gt;&lt;uia cls='NetUIRibbonTab' name='Home' /&gt;">
+                                              <ui:Target.TimeoutMS>
+                                                <InArgument x:TypeArguments="x:Int32" />
+                                              </ui:Target.TimeoutMS>
+                                              <ui:Target.WaitForReady>
+                                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                                              </ui:Target.WaitForReady>
+                                            </ui:Target>
+                                          </ui:Click.Target>
+                                        </ui:Click>
+                                      </Sequence>
+                                    </Sequence>
+                                  </ui:CommentOut.Body>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </ui:CommentOut>
                               </Sequence>
                             </Sequence>
                             <Sequence DisplayName="Change Line Graph" sap:VirtualizedContainerService.HintSize="416.8,68.8" sap2010:WorkflowViewState.IdRef="Sequence_123">
@@ -1067,10 +1106,10 @@
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <Sequence DisplayName="Add New Graph" sap:VirtualizedContainerService.HintSize="375.2,690.4" sap2010:WorkflowViewState.IdRef="Sequence_110">
+                              <Sequence DisplayName="Add New Graph" sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_110">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
@@ -1086,7 +1125,7 @@
                                     </ui:CursorPosition>
                                   </ui:Click.CursorPosition>
                                   <ui:Click.Target>
-                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="195d4f08-6151-4623-8c96-67ddad959fbc" InformativeScreenshot="7b23c90c204c0bb593f7fb103887c88f" Selector="&lt;uia name='Chart Area' role='Chart Element' idx='{{graphNum}}' /&gt;&#xD;&#xA;">
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="195d4f08-6151-4623-8c96-67ddad959fbc" InformativeScreenshot="7b23c90c204c0bb593f7fb103887c88f" Selector="&lt;uia name='Chart Area' role='Chart Element' idx='{{graphNum}}' /&gt;&#xA;">
                                       <ui:Target.TimeoutMS>
                                         <InArgument x:TypeArguments="x:Int32" />
                                       </ui:Target.TimeoutMS>
@@ -1139,7 +1178,7 @@
                                   </ui:SendHotkey.Target>
                                 </ui:SendHotkey>
                               </Sequence>
-                              <Sequence DisplayName="Rename Graph" sap:VirtualizedContainerService.HintSize="375.2,68.8" sap2010:WorkflowViewState.IdRef="Sequence_112">
+                              <Sequence DisplayName="Rename Graph" sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_112">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1225,13 +1264,25 @@
                                   </ui:TypeInto.Target>
                                 </ui:TypeInto>
                               </Sequence>
-                              <Sequence DisplayName="Add Correct Data" sap:VirtualizedContainerService.HintSize="375.2,68.8" sap2010:WorkflowViewState.IdRef="Sequence_122">
+                              <Sequence DisplayName="Add Correct Data" sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_122">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
+                                <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'Edit'" sap:VirtualizedContainerService.HintSize="333.6,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_25" Text="A40[k(enter)]">
+                                  <ui:TypeInto.Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="455f8dd7-3b71-470a-bde1-5fd494380312" InformativeScreenshot="10b7b70d2ef76b872fe33e1167feb2c3" Selector="&lt;wnd aaname='Name Box' cls='ComboBox' /&gt;&lt;wnd aaname='Name Box' cls='Edit' /&gt;">
+                                      <ui:Target.TimeoutMS>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:Target.TimeoutMS>
+                                      <ui:Target.WaitForReady>
+                                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                                      </ui:Target.WaitForReady>
+                                    </ui:Target>
+                                  </ui:TypeInto.Target>
+                                </ui:TypeInto>
                                 <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Chart Element'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_161" KeyModifiers="None" MouseButton="BTN_RIGHT">
                                   <ui:Click.CursorPosition>
                                     <ui:CursorPosition Position="Center">
@@ -1244,7 +1295,7 @@
                                     </ui:CursorPosition>
                                   </ui:Click.CursorPosition>
                                   <ui:Click.Target>
-                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="dc34065f-76c9-48e9-baf5-d3a0bed517bf" InformativeScreenshot="4efe2f0173b16ef6c8da2ff3d30b8337" Selector="&lt;uia idx='{{graphNum}}' name='Chart Area' role='Chart Element' /&gt;&#xD;&#xA;">
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="dc34065f-76c9-48e9-baf5-d3a0bed517bf" InformativeScreenshot="4efe2f0173b16ef6c8da2ff3d30b8337" Selector="&lt;uia idx='{{graphNum}}' name='Chart Area' role='Chart Element' /&gt;&#xA;">
                                       <ui:Target.TimeoutMS>
                                         <InArgument x:TypeArguments="x:Int32" />
                                       </ui:Target.TimeoutMS>
@@ -1253,6 +1304,12 @@
                                       </ui:Target.WaitForReady>
                                     </ui:Target>
                                   </ui:Click.Target>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
                                 </ui:Click>
                                 <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Open Chart Data Menu" sap:VirtualizedContainerService.HintSize="333.6,52.8" sap2010:WorkflowViewState.IdRef="WindowScope_40" InformativeScreenshot="b183311fd427139633728b499f0f5b5b" Selector="&lt;wnd app='excel.exe' cls='Net UI Tool Window' idx='*' /&gt;">
                                   <ui:WindowScope.Body>
@@ -1715,7 +1772,7 @@
                                 </ui:WindowScope>
                               </Sequence>
                             </Sequence>
-                            <Sequence DisplayName="Change Percentage Line Graph" sap:VirtualizedContainerService.HintSize="416.8,1148" sap2010:WorkflowViewState.IdRef="Sequence_137">
+                            <Sequence DisplayName="Change Percentage Line Graph" sap:VirtualizedContainerService.HintSize="416.8,2067.2" sap2010:WorkflowViewState.IdRef="Sequence_137">
                               <Sequence.Variables>
                                 <Variable x:TypeArguments="ui:UiElement" Name="takeTwoTab" />
                               </Sequence.Variables>
@@ -1725,26 +1782,16 @@
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <Sequence DisplayName="Add New Graph" sap:VirtualizedContainerService.HintSize="375.2,837.6" sap2010:WorkflowViewState.IdRef="Sequence_124">
+                              <Sequence DisplayName="Add New Graph" sap:VirtualizedContainerService.HintSize="375.2,865.6" sap2010:WorkflowViewState.IdRef="Sequence_124">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Button  Page down'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_172" KeyModifiers="None" MouseButton="BTN_LEFT">
-                                  <ui:Click.CursorPosition>
-                                    <ui:CursorPosition Position="Center">
-                                      <ui:CursorPosition.OffsetX>
-                                        <InArgument x:TypeArguments="x:Int32" />
-                                      </ui:CursorPosition.OffsetX>
-                                      <ui:CursorPosition.OffsetY>
-                                        <InArgument x:TypeArguments="x:Int32" />
-                                      </ui:CursorPosition.OffsetY>
-                                    </ui:CursorPosition>
-                                  </ui:Click.CursorPosition>
-                                  <ui:Click.Target>
-                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9e5c28d9-53ac-4b3e-99f7-021c3fde641b" InformativeScreenshot="7607e9288681ed1db89a61df70cfc753" Selector="&lt;uia cls='NetUIRepeatButton' helpText='Moves the vertical position down a couple of lines' name='Page down' idx='2' /&gt;&#xD;&#xA;">
+                                <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'Edit'" sap:VirtualizedContainerService.HintSize="333.6,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_27" Text="A48[k(enter)]">
+                                  <ui:TypeInto.Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f91ef07a-77b1-4e04-84ef-64b8a9d418d2" InformativeScreenshot="7373d453cdb38d8a8992134c246e9c0e" Selector="&lt;wnd aaname='Name Box' cls='ComboBox' /&gt;&lt;wnd aaname='Name Box' cls='Edit' /&gt;">
                                       <ui:Target.TimeoutMS>
                                         <InArgument x:TypeArguments="x:Int32" />
                                       </ui:Target.TimeoutMS>
@@ -1752,8 +1799,8 @@
                                         <InArgument x:TypeArguments="ui:WaitForReady" />
                                       </ui:Target.WaitForReady>
                                     </ui:Target>
-                                  </ui:Click.Target>
-                                </ui:Click>
+                                  </ui:TypeInto.Target>
+                                </ui:TypeInto>
                                 <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Chart Element'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_173" KeyModifiers="None" MouseButton="BTN_LEFT">
                                   <ui:Click.CursorPosition>
                                     <ui:CursorPosition Position="Center">
@@ -1766,7 +1813,7 @@
                                     </ui:CursorPosition>
                                   </ui:Click.CursorPosition>
                                   <ui:Click.Target>
-                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="195d4f08-6151-4623-8c96-67ddad959fbc" InformativeScreenshot="79797cf7aa45fea4f7ca094808b10bea" Selector="&lt;uia idx='{{graphNum}}' name='Chart Area' role='Chart Element' /&gt;&#xD;&#xA;">
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="195d4f08-6151-4623-8c96-67ddad959fbc" InformativeScreenshot="79797cf7aa45fea4f7ca094808b10bea" Selector="&lt;uia idx='{{graphNum}}' name='Chart Area' role='Chart Element' /&gt;&#xA;">
                                       <ui:Target.TimeoutMS>
                                         <InArgument x:TypeArguments="x:Int32" />
                                       </ui:Target.TimeoutMS>
@@ -1794,9 +1841,9 @@
                                     </ui:Target>
                                   </ui:SendHotkey.Target>
                                 </ui:SendHotkey>
-                                <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'Edit'" sap:VirtualizedContainerService.HintSize="333.6,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_20" Text="B49[k(enter)]">
+                                <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'Edit'" sap:VirtualizedContainerService.HintSize="333.6,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_22" Text="b49[k(enter)]">
                                   <ui:TypeInto.Target>
-                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b338780b-7739-4992-ab07-c24bb87cf5da" InformativeScreenshot="e6cdcdbde043902feac6f2fd7e0c5d36" Selector="&lt;wnd aaname='Name Box' cls='ComboBox' /&gt;&lt;wnd aaname='Name Box' cls='Edit' /&gt;">
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f91ef07a-77b1-4e04-84ef-64b8a9d418d2" InformativeScreenshot="7373d453cdb38d8a8992134c246e9c0e" Selector="&lt;wnd aaname='Name Box' cls='ComboBox' /&gt;&lt;wnd aaname='Name Box' cls='Edit' /&gt;">
                                       <ui:Target.TimeoutMS>
                                         <InArgument x:TypeArguments="x:Int32" />
                                       </ui:Target.TimeoutMS>
@@ -1819,10 +1866,10 @@
                                   </ui:SendHotkey.Target>
                                 </ui:SendHotkey>
                               </Sequence>
-                              <Sequence DisplayName="Rename Graph" sap:VirtualizedContainerService.HintSize="375.2,68.8" sap2010:WorkflowViewState.IdRef="Sequence_126">
+                              <Sequence DisplayName="Rename Graph" sap:VirtualizedContainerService.HintSize="375.2,468" sap2010:WorkflowViewState.IdRef="Sequence_126">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
@@ -1905,13 +1952,25 @@
                                   </ui:TypeInto.Target>
                                 </ui:TypeInto>
                               </Sequence>
-                              <Sequence DisplayName="Add Correct Data" sap:VirtualizedContainerService.HintSize="375.2,68.8" sap2010:WorkflowViewState.IdRef="Sequence_136">
+                              <Sequence DisplayName="Add Correct Data" sap:VirtualizedContainerService.HintSize="375.2,560.8" sap2010:WorkflowViewState.IdRef="Sequence_136">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
+                                <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'Edit'" sap:VirtualizedContainerService.HintSize="333.6,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_26" Text="A56[k(enter)]">
+                                  <ui:TypeInto.Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6ace08d4-d40c-46fa-a2f0-34dc4f50a183" InformativeScreenshot="e4d8efad3e497708788853e0a542cbe1" Selector="&lt;wnd aaname='Name Box' cls='ComboBox' /&gt;&lt;wnd aaname='Name Box' cls='Edit' /&gt;">
+                                      <ui:Target.TimeoutMS>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:Target.TimeoutMS>
+                                      <ui:Target.WaitForReady>
+                                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                                      </ui:Target.WaitForReady>
+                                    </ui:Target>
+                                  </ui:TypeInto.Target>
+                                </ui:TypeInto>
                                 <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Chart Element'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_176" KeyModifiers="None" MouseButton="BTN_RIGHT">
                                   <ui:Click.CursorPosition>
                                     <ui:CursorPosition Position="Center">
@@ -1924,7 +1983,7 @@
                                     </ui:CursorPosition>
                                   </ui:Click.CursorPosition>
                                   <ui:Click.Target>
-                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="dc34065f-76c9-48e9-baf5-d3a0bed517bf" InformativeScreenshot="2ac50de965b3b217403498e3a273ebab" Selector="&lt;uia idx='{{graphNum}}' name='Chart Area' role='Chart Element' /&gt;&#xD;&#xA;">
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="dc34065f-76c9-48e9-baf5-d3a0bed517bf" InformativeScreenshot="2ac50de965b3b217403498e3a273ebab" Selector="&lt;uia idx='{{graphNum}}' name='Chart Area' role='Chart Element' /&gt;&#xA;">
                                       <ui:Target.TimeoutMS>
                                         <InArgument x:TypeArguments="x:Int32" />
                                       </ui:Target.TimeoutMS>
@@ -1990,14 +2049,14 @@
                                       <ActivityAction.Argument>
                                         <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                                       </ActivityAction.Argument>
-                                      <Sequence DisplayName="Check/Uncheck" sap:VirtualizedContainerService.HintSize="375.2,1108.8" sap2010:WorkflowViewState.IdRef="Sequence_135">
+                                      <Sequence DisplayName="Check/Uncheck" sap:VirtualizedContainerService.HintSize="566.4,1108.8" sap2010:WorkflowViewState.IdRef="Sequence_135">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <Sequence DisplayName="Open" sap:VirtualizedContainerService.HintSize="333.6,68.8" sap2010:WorkflowViewState.IdRef="Sequence_128">
+                                        <Sequence DisplayName="Open" sap:VirtualizedContainerService.HintSize="524.8,68.8" sap2010:WorkflowViewState.IdRef="Sequence_128">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2046,7 +2105,7 @@
                                             </If.Then>
                                           </If>
                                         </Sequence>
-                                        <Sequence DisplayName="High" sap:VirtualizedContainerService.HintSize="333.6,68.8" sap2010:WorkflowViewState.IdRef="Sequence_129">
+                                        <Sequence DisplayName="High" sap:VirtualizedContainerService.HintSize="524.8,68.8" sap2010:WorkflowViewState.IdRef="Sequence_129">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2095,7 +2154,7 @@
                                             </If.Then>
                                           </If>
                                         </Sequence>
-                                        <Sequence DisplayName="Low" sap:VirtualizedContainerService.HintSize="333.6,68.8" sap2010:WorkflowViewState.IdRef="Sequence_130">
+                                        <Sequence DisplayName="Low" sap:VirtualizedContainerService.HintSize="524.8,68.8" sap2010:WorkflowViewState.IdRef="Sequence_130">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2144,7 +2203,7 @@
                                             </If.Then>
                                           </If>
                                         </Sequence>
-                                        <Sequence DisplayName="Close" sap:VirtualizedContainerService.HintSize="333.6,68.8" sap2010:WorkflowViewState.IdRef="Sequence_131">
+                                        <Sequence DisplayName="Close" sap:VirtualizedContainerService.HintSize="524.8,68.8" sap2010:WorkflowViewState.IdRef="Sequence_131">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2193,7 +2252,7 @@
                                             </If.Then>
                                           </If>
                                         </Sequence>
-                                        <Sequence DisplayName="Price" sap:VirtualizedContainerService.HintSize="333.6,68.8" sap2010:WorkflowViewState.IdRef="Sequence_132">
+                                        <Sequence DisplayName="Price" sap:VirtualizedContainerService.HintSize="524.8,68.8" sap2010:WorkflowViewState.IdRef="Sequence_132">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2242,7 +2301,7 @@
                                             </If.Then>
                                           </If>
                                         </Sequence>
-                                        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'push button  Page down'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_183" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'push button  Page down'" sap:VirtualizedContainerService.HintSize="524.8,107.2" sap2010:WorkflowViewState.IdRef="Click_183" KeyModifiers="None" MouseButton="BTN_LEFT">
                                           <ui:Click.CursorPosition>
                                             <ui:CursorPosition Position="Center">
                                               <ui:CursorPosition.OffsetX>
@@ -2264,7 +2323,7 @@
                                             </ui:Target>
                                           </ui:Click.Target>
                                         </ui:Click>
-                                        <Sequence DisplayName="Change" sap:VirtualizedContainerService.HintSize="333.6,68.8" sap2010:WorkflowViewState.IdRef="Sequence_133">
+                                        <Sequence DisplayName="Change" sap:VirtualizedContainerService.HintSize="524.8,68.8" sap2010:WorkflowViewState.IdRef="Sequence_133">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2319,7 +2378,7 @@
                                             </If.Then>
                                           </If>
                                         </Sequence>
-                                        <Sequence DisplayName="Change Percentage" sap:VirtualizedContainerService.HintSize="333.6,68.8" sap2010:WorkflowViewState.IdRef="Sequence_134">
+                                        <Sequence DisplayName="Change Percentage" sap:VirtualizedContainerService.HintSize="524.8,68.8" sap2010:WorkflowViewState.IdRef="Sequence_134">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2374,7 +2433,7 @@
                                             </If.Then>
                                           </If>
                                         </Sequence>
-                                        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'push button  OK'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_186" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'push button  OK'" sap:VirtualizedContainerService.HintSize="524.8,107.2" sap2010:WorkflowViewState.IdRef="Click_186" KeyModifiers="None" MouseButton="BTN_LEFT">
                                           <ui:Click.CursorPosition>
                                             <ui:CursorPosition Position="Center">
                                               <ui:CursorPosition.OffsetX>
@@ -2449,7 +2508,7 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'BlizzardD Xlmain'" sap:VirtualizedContainerService.HintSize="433.6,216" sap2010:WorkflowViewState.IdRef="WindowScope_2" InformativeScreenshot="48f205d049c56107ceb820279d039941" Selector="&lt;wnd app='excel.exe' cls='XLMAIN' title='Blizzard Database - Excel' /&gt;">
+                  <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'BlizzardD Xlmain'" sap:VirtualizedContainerService.HintSize="508.8,216" sap2010:WorkflowViewState.IdRef="WindowScope_2" InformativeScreenshot="48f205d049c56107ceb820279d039941" Selector="&lt;wnd app='excel.exe' cls='XLMAIN' title='Blizzard Database - Excel' /&gt;">
                     <ui:WindowScope.Body>
                       <ActivityAction x:TypeArguments="x:Object">
                         <ActivityAction.Argument>
@@ -3623,7 +3682,7 @@
                                             <OutArgument x:TypeArguments="x:String">[openBox]</OutArgument>
                                           </ui:GetAttribute.Result>
                                           <ui:GetAttribute.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3beff404-d253-41ed-9472-697d60a7b47f" InformativeScreenshot="f3c2b5f21a02749141f8d7bea459f680" Selector="&lt;wnd aaname='Select Data Source' cls='NetUIHWND' /&gt;&#xD;&#xA;&lt;ctrl name='Legend Entries (Series)' role='list' /&gt;&#xD;&#xA;&lt;ctrl name='Open' role='check box' text='unchecked' /&gt;&#xD;&#xA;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3beff404-d253-41ed-9472-697d60a7b47f" InformativeScreenshot="f3c2b5f21a02749141f8d7bea459f680" Selector="&lt;wnd aaname='Select Data Source' cls='NetUIHWND' /&gt;&#xA;&lt;ctrl name='Legend Entries (Series)' role='list' /&gt;&#xA;&lt;ctrl name='Open' role='check box' text='unchecked' /&gt;&#xA;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -3672,7 +3731,7 @@
                                             <OutArgument x:TypeArguments="x:String">[highBox]</OutArgument>
                                           </ui:GetAttribute.Result>
                                           <ui:GetAttribute.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="254565f5-c804-4e3f-aa65-4f3fc5e9f9d6" InformativeScreenshot="274358ebcb3377a90bf8fa415b2ce7b2" Selector="&lt;wnd aaname='Select Data Source' cls='NetUIHWND' /&gt;&#xD;&#xA;&lt;ctrl name='Legend Entries (Series)' role='list' /&gt;&#xD;&#xA;&lt;ctrl name='High' role='check box' text='checked' /&gt;&#xD;&#xA;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="254565f5-c804-4e3f-aa65-4f3fc5e9f9d6" InformativeScreenshot="274358ebcb3377a90bf8fa415b2ce7b2" Selector="&lt;wnd aaname='Select Data Source' cls='NetUIHWND' /&gt;&#xA;&lt;ctrl name='Legend Entries (Series)' role='list' /&gt;&#xA;&lt;ctrl name='High' role='check box' text='checked' /&gt;&#xA;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -3721,7 +3780,7 @@
                                             <OutArgument x:TypeArguments="x:String">[lowBox]</OutArgument>
                                           </ui:GetAttribute.Result>
                                           <ui:GetAttribute.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="db3dcf1a-16db-4bba-bfe3-81428e8fcc0d" InformativeScreenshot="cfa6698dbce4875e547fccc3bb32bf84" Selector="&lt;wnd aaname='Select Data Source' cls='NetUIHWND' /&gt;&#xD;&#xA;&lt;ctrl name='Legend Entries (Series)' role='list' /&gt;&#xD;&#xA;&lt;ctrl name='Low' role='check box' text='checked' /&gt;&#xD;&#xA;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="db3dcf1a-16db-4bba-bfe3-81428e8fcc0d" InformativeScreenshot="cfa6698dbce4875e547fccc3bb32bf84" Selector="&lt;wnd aaname='Select Data Source' cls='NetUIHWND' /&gt;&#xA;&lt;ctrl name='Legend Entries (Series)' role='list' /&gt;&#xA;&lt;ctrl name='Low' role='check box' text='checked' /&gt;&#xA;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -3770,7 +3829,7 @@
                                             <OutArgument x:TypeArguments="x:String">[closeBox]</OutArgument>
                                           </ui:GetAttribute.Result>
                                           <ui:GetAttribute.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="53f035b5-7b1d-400c-9780-a4ab296e8c05" InformativeScreenshot="70e12768cb1d527cf252562de415b6f2" Selector="&lt;wnd aaname='Select Data Source' cls='NetUIHWND' /&gt;&#xD;&#xA;&lt;ctrl name='Legend Entries (Series)' role='list' /&gt;&#xD;&#xA;&lt;ctrl name='Close' role='check box' text='unchecked' /&gt;&#xD;&#xA;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="53f035b5-7b1d-400c-9780-a4ab296e8c05" InformativeScreenshot="70e12768cb1d527cf252562de415b6f2" Selector="&lt;wnd aaname='Select Data Source' cls='NetUIHWND' /&gt;&#xA;&lt;ctrl name='Legend Entries (Series)' role='list' /&gt;&#xA;&lt;ctrl name='Close' role='check box' text='unchecked' /&gt;&#xA;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -3819,7 +3878,7 @@
                                             <OutArgument x:TypeArguments="x:String">[priceBox]</OutArgument>
                                           </ui:GetAttribute.Result>
                                           <ui:GetAttribute.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0982eda0-531b-478d-8481-e67a369024d1" InformativeScreenshot="6a7fb6d54f256e9d4becbfacc55f02af" Selector="&lt;wnd aaname='Select Data Source' cls='NetUIHWND' /&gt;&#xD;&#xA;&lt;ctrl name='Legend Entries (Series)' role='list' /&gt;&#xD;&#xA;&lt;ctrl name='Price' role='check box' text='checked' /&gt;&#xD;&#xA;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0982eda0-531b-478d-8481-e67a369024d1" InformativeScreenshot="6a7fb6d54f256e9d4becbfacc55f02af" Selector="&lt;wnd aaname='Select Data Source' cls='NetUIHWND' /&gt;&#xA;&lt;ctrl name='Legend Entries (Series)' role='list' /&gt;&#xA;&lt;ctrl name='Price' role='check box' text='checked' /&gt;&#xA;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -3890,7 +3949,7 @@
                                             <OutArgument x:TypeArguments="x:String">[changeBox]</OutArgument>
                                           </ui:GetAttribute.Result>
                                           <ui:GetAttribute.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1ed42b35-a8af-4c49-98f6-50120fad6a7d" InformativeScreenshot="8aff156a89b4d1b369561938c9a24808" Selector="&lt;wnd aaname='Select Data Source' cls='NetUIHWND' /&gt;&#xD;&#xA;&lt;ctrl name='Legend Entries (Series)' role='list' /&gt;&#xD;&#xA;&lt;ctrl name='Change' role='check box' text='unchecked' /&gt;&#xD;&#xA;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1ed42b35-a8af-4c49-98f6-50120fad6a7d" InformativeScreenshot="8aff156a89b4d1b369561938c9a24808" Selector="&lt;wnd aaname='Select Data Source' cls='NetUIHWND' /&gt;&#xA;&lt;ctrl name='Legend Entries (Series)' role='list' /&gt;&#xA;&lt;ctrl name='Change' role='check box' text='unchecked' /&gt;&#xA;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -3939,7 +3998,7 @@
                                             <OutArgument x:TypeArguments="x:String">[changePercentBox]</OutArgument>
                                           </ui:GetAttribute.Result>
                                           <ui:GetAttribute.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6920f0e8-1798-4c76-82e3-6a29bd0a996f" InformativeScreenshot="fd3d6b878e2e74190d8ada320576f38e" Selector="&lt;wnd aaname='Select Data Source' cls='NetUIHWND' /&gt;&#xD;&#xA;&lt;ctrl name='Legend Entries (Series)' role='list' /&gt;&#xD;&#xA;&lt;ctrl name='Change(%)' role='check box' text='unchecked' /&gt;&#xD;&#xA;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6920f0e8-1798-4c76-82e3-6a29bd0a996f" InformativeScreenshot="fd3d6b878e2e74190d8ada320576f38e" Selector="&lt;wnd aaname='Select Data Source' cls='NetUIHWND' /&gt;&#xA;&lt;ctrl name='Legend Entries (Series)' role='list' /&gt;&#xA;&lt;ctrl name='Change(%)' role='check box' text='unchecked' /&gt;&#xA;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -4304,7 +4363,7 @@
                                             <OutArgument x:TypeArguments="x:String">[openBox]</OutArgument>
                                           </ui:GetAttribute.Result>
                                           <ui:GetAttribute.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3beff404-d253-41ed-9472-697d60a7b47f" InformativeScreenshot="17ede37813109020624d2b46865167a1" Selector="&lt;wnd aaname='Select Data Source' cls='NetUIHWND' /&gt;&#xD;&#xA;&lt;ctrl name='Legend Entries (Series)' role='list' /&gt;&#xD;&#xA;&lt;ctrl name='Open' role='check box' text='unchecked' /&gt;&#xD;&#xA;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3beff404-d253-41ed-9472-697d60a7b47f" InformativeScreenshot="17ede37813109020624d2b46865167a1" Selector="&lt;wnd aaname='Select Data Source' cls='NetUIHWND' /&gt;&#xA;&lt;ctrl name='Legend Entries (Series)' role='list' /&gt;&#xA;&lt;ctrl name='Open' role='check box' text='unchecked' /&gt;&#xA;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -4353,7 +4412,7 @@
                                             <OutArgument x:TypeArguments="x:String">[highBox]</OutArgument>
                                           </ui:GetAttribute.Result>
                                           <ui:GetAttribute.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="254565f5-c804-4e3f-aa65-4f3fc5e9f9d6" InformativeScreenshot="ff6efe5f7ee3f1dffd71e50dce5224a0" Selector="&lt;wnd aaname='Select Data Source' cls='NetUIHWND' /&gt;&#xD;&#xA;&lt;ctrl name='Legend Entries (Series)' role='list' /&gt;&#xD;&#xA;&lt;ctrl name='High' role='check box' text='unchecked' /&gt;&#xD;&#xA;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="254565f5-c804-4e3f-aa65-4f3fc5e9f9d6" InformativeScreenshot="ff6efe5f7ee3f1dffd71e50dce5224a0" Selector="&lt;wnd aaname='Select Data Source' cls='NetUIHWND' /&gt;&#xA;&lt;ctrl name='Legend Entries (Series)' role='list' /&gt;&#xA;&lt;ctrl name='High' role='check box' text='unchecked' /&gt;&#xA;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -4402,7 +4461,7 @@
                                             <OutArgument x:TypeArguments="x:String">[lowBox]</OutArgument>
                                           </ui:GetAttribute.Result>
                                           <ui:GetAttribute.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="db3dcf1a-16db-4bba-bfe3-81428e8fcc0d" InformativeScreenshot="cfa6698dbce4875e547fccc3bb32bf84" Selector="&lt;wnd aaname='Select Data Source' cls='NetUIHWND' /&gt;&#xD;&#xA;&lt;ctrl name='Legend Entries (Series)' role='list' /&gt;&#xD;&#xA;&lt;ctrl name='Low' role='check box' text='unchecked' /&gt;&#xD;&#xA;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="db3dcf1a-16db-4bba-bfe3-81428e8fcc0d" InformativeScreenshot="cfa6698dbce4875e547fccc3bb32bf84" Selector="&lt;wnd aaname='Select Data Source' cls='NetUIHWND' /&gt;&#xA;&lt;ctrl name='Legend Entries (Series)' role='list' /&gt;&#xA;&lt;ctrl name='Low' role='check box' text='unchecked' /&gt;&#xA;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -4451,7 +4510,7 @@
                                             <OutArgument x:TypeArguments="x:String">[closeBox]</OutArgument>
                                           </ui:GetAttribute.Result>
                                           <ui:GetAttribute.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="53f035b5-7b1d-400c-9780-a4ab296e8c05" InformativeScreenshot="6ed165fcf44cdc0db65f17245addae61" Selector="&lt;wnd aaname='Select Data Source' cls='NetUIHWND' /&gt;&#xD;&#xA;&lt;ctrl name='Legend Entries (Series)' role='list' /&gt;&#xD;&#xA;&lt;ctrl name='Close' role='check box' text='unchecked' /&gt;&#xD;&#xA;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="53f035b5-7b1d-400c-9780-a4ab296e8c05" InformativeScreenshot="6ed165fcf44cdc0db65f17245addae61" Selector="&lt;wnd aaname='Select Data Source' cls='NetUIHWND' /&gt;&#xA;&lt;ctrl name='Legend Entries (Series)' role='list' /&gt;&#xA;&lt;ctrl name='Close' role='check box' text='unchecked' /&gt;&#xA;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -4500,7 +4559,7 @@
                                             <OutArgument x:TypeArguments="x:String">[priceBox]</OutArgument>
                                           </ui:GetAttribute.Result>
                                           <ui:GetAttribute.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0982eda0-531b-478d-8481-e67a369024d1" InformativeScreenshot="0c5cd804fac9ffa8fc5729ae13298717" Selector="&lt;wnd aaname='Select Data Source' cls='NetUIHWND' /&gt;&#xD;&#xA;&lt;ctrl name='Legend Entries (Series)' role='list' /&gt;&#xD;&#xA;&lt;ctrl name='Price' role='check box' text='unchecked' /&gt;&#xD;&#xA;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0982eda0-531b-478d-8481-e67a369024d1" InformativeScreenshot="0c5cd804fac9ffa8fc5729ae13298717" Selector="&lt;wnd aaname='Select Data Source' cls='NetUIHWND' /&gt;&#xA;&lt;ctrl name='Legend Entries (Series)' role='list' /&gt;&#xA;&lt;ctrl name='Price' role='check box' text='unchecked' /&gt;&#xA;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -4571,7 +4630,7 @@
                                             <OutArgument x:TypeArguments="x:String">[changeBox]</OutArgument>
                                           </ui:GetAttribute.Result>
                                           <ui:GetAttribute.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1ed42b35-a8af-4c49-98f6-50120fad6a7d" InformativeScreenshot="8aff156a89b4d1b369561938c9a24808" Selector="&lt;wnd aaname='Select Data Source' cls='NetUIHWND' /&gt;&#xD;&#xA;&lt;ctrl name='Legend Entries (Series)' role='list' /&gt;&#xD;&#xA;&lt;ctrl name='Change' role='check box' text='checked' /&gt;&#xD;&#xA;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1ed42b35-a8af-4c49-98f6-50120fad6a7d" InformativeScreenshot="8aff156a89b4d1b369561938c9a24808" Selector="&lt;wnd aaname='Select Data Source' cls='NetUIHWND' /&gt;&#xA;&lt;ctrl name='Legend Entries (Series)' role='list' /&gt;&#xA;&lt;ctrl name='Change' role='check box' text='checked' /&gt;&#xA;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -4626,7 +4685,7 @@
                                             <OutArgument x:TypeArguments="x:String">[changePercentBox]</OutArgument>
                                           </ui:GetAttribute.Result>
                                           <ui:GetAttribute.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6920f0e8-1798-4c76-82e3-6a29bd0a996f" InformativeScreenshot="a0ba312a029f86004a32b1ca3ce21a29" Selector="&lt;wnd aaname='Select Data Source' cls='NetUIHWND' /&gt;&#xD;&#xA;&lt;ctrl name='Legend Entries (Series)' role='list' /&gt;&#xD;&#xA;&lt;ctrl name='Change(%)' role='check box' text='unchecked' /&gt;&#xD;&#xA;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6920f0e8-1798-4c76-82e3-6a29bd0a996f" InformativeScreenshot="a0ba312a029f86004a32b1ca3ce21a29" Selector="&lt;wnd aaname='Select Data Source' cls='NetUIHWND' /&gt;&#xA;&lt;ctrl name='Legend Entries (Series)' role='list' /&gt;&#xA;&lt;ctrl name='Change(%)' role='check box' text='unchecked' /&gt;&#xA;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -4726,7 +4785,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:WindowScope>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="702.4,240.8" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="685.6,240.8" sap2010:WorkflowViewState.IdRef="CommentOut_1">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="483.2,162.4" sap2010:WorkflowViewState.IdRef="Sequence_4">
           <sap:WorkflowViewStateService.ViewState>
