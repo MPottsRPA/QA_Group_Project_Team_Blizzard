@@ -73,13 +73,19 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:Comment DisplayName="Comment (placeholder)" sap:VirtualizedContainerService.HintSize="713,55" sap2010:WorkflowViewState.IdRef="Comment_1" Text="//  Invoke steps of the process" />
-    <If Condition="[DateTime.Now.ToString(&quot;HH&quot;).Equals(&quot;1&quot;)]" sap:VirtualizedContainerService.HintSize="713,235" sap2010:WorkflowViewState.IdRef="If_1">
+    <If Condition="[DateTime.Now.ToString(&quot;HH&quot;).Equals(&quot;22&quot;)]" sap:VirtualizedContainerService.HintSize="713,235" sap2010:WorkflowViewState.IdRef="If_1">
       <If.Then>
         <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke DataManipulation workflow" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="DataManipulation.xaml">
           <ui:InvokeWorkflowFile.Arguments>
-            <InArgument x:TypeArguments="x:String" x:Key="in_CompanyName">[in_CompanyName]</InArgument>
-            <InArgument x:TypeArguments="x:Int32" x:Key="in_TransactionNumber" />
-            <InArgument x:TypeArguments="njl:JObject" x:Key="in_LoadedConfig">[in_LoadedConfig]</InArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="in_CompanyName">
+              <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_CompanyName" />
+            </InArgument>
+            <InArgument x:TypeArguments="x:Int32" x:Key="in_TransactionNumber">
+              <mva:VisualBasicValue x:TypeArguments="x:Int32" ExpressionText="in_TransactionNumber" />
+            </InArgument>
+            <InArgument x:TypeArguments="njl:JObject" x:Key="in_LoadedConfig">
+              <mva:VisualBasicValue x:TypeArguments="njl:JObject" ExpressionText="in_LoadedConfig" />
+            </InArgument>
           </ui:InvokeWorkflowFile.Arguments>
         </ui:InvokeWorkflowFile>
       </If.Then>
