@@ -4,11 +4,12 @@
     <x:Property sap2010:Annotation.AnnotationText="Dictionary structure to store configuration data of the process (settings, constants and assets)." Name="out_LoadedConfig" Type="OutArgument(njl:JObject)" />
     <x:Property Name="out_Password" Type="OutArgument(ss:SecureString)" />
     <x:Property Name="out_Username" Type="OutArgument(x:String)" />
+    <x:Property Name="out_EndOfDayHour" Type="OutArgument(x:Int32)" />
   </x:Members>
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1436,1288</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1436,1954</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>GetAllSettings_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="26">
@@ -41,7 +42,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="48">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="27">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -71,7 +72,7 @@
       <AssemblyReference>UiPath.CV</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Initialize, populate and output a configuration Dictionary to be used throughout the project. &#xA;Settings and constants are read from the local configuration file, and assets are fetched from Orchestrator. &#xA;Asset values overwrite settings and constant values if they are defined with the same name." DisplayName="Initialize All Settings" sap:VirtualizedContainerService.HintSize="480,1123" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap2010:Annotation.AnnotationText="Initialize, populate and output a configuration Dictionary to be used throughout the project. &#xA;Settings and constants are read from the local configuration file, and assets are fetched from Orchestrator. &#xA;Asset values overwrite settings and constant values if they are defined with the same name." DisplayName="Initialize All Settings" sap:VirtualizedContainerService.HintSize="566,1789" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="ConfigText" />
     </Sequence.Variables>
@@ -81,7 +82,7 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438,306" sap2010:WorkflowViewState.IdRef="TryCatch_4">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="524,306" sap2010:WorkflowViewState.IdRef="TryCatch_4">
       <TryCatch.Try>
         <ui:ReadTextFile Content="[ConfigText]" DisplayName="Read Text File" FileName="[in_ConfigFile]" sap:VirtualizedContainerService.HintSize="384,79" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
       </TryCatch.Try>
@@ -128,8 +129,42 @@
         </Catch>
       </TryCatch.Catches>
     </TryCatch>
-    <ui:DeserializeJson x:TypeArguments="njl:JObject" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="438,60" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_1" JsonObject="[out_LoadedConfig]" JsonString="[ConfigText]" />
-    <TryCatch sap2010:Annotation.AnnotationText="Securely fetch or create and use a set of credentials.&#xA;&#xA;First, there is an attempt to fetch credentials from Orchestrator using the name received as argument. &#xA;If it is not possible to retrieve those credentials from Orchestrator, there is an attempt to fetch them from the Windows Credential Manager (WCM). &#xA;If the credentials are not defined in the WCM, the user is prompted to create the credentials that will be added to the WCM and returned for use during the process execution.&#xA;&#xA;The Private property is used to prevent the generation of logs that might contain information about the credentials." DisplayName="Private: Get Application Credentials" sap:VirtualizedContainerService.HintSize="438,483" sap2010:WorkflowViewState.IdRef="TryCatch_5">
+    <ui:DeserializeJson x:TypeArguments="njl:JObject" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="524,60" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_1" JsonObject="[out_LoadedConfig]" JsonString="[ConfigText]" />
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="524,481" sap2010:WorkflowViewState.IdRef="TryCatch_6">
+      <TryCatch.Try>
+        <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="EndOfDay" DisplayName="Get Asset" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
+          <ui:GetRobotAsset.Value>
+            <OutArgument x:TypeArguments="x:Int32">[out_EndOfDayHour]</OutArgument>
+          </ui:GetRobotAsset.Value>
+        </ui:GetRobotAsset>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="490,319" sap2010:WorkflowViewState.IdRef="Catch`1_6">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <If sap2010:Annotation.AnnotationText="The Private property is used to prevent the generation of logs that might contain information about the credentials." Condition="[out_EndOfDayHour.ToString is Nothing]" DisplayName="Fetch assets" sap:VirtualizedContainerService.HintSize="484,250" sap2010:WorkflowViewState.IdRef="If_8">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <If.Then>
+                <Throw DisplayName="Throw (no asset)" Exception="[new Exception(&quot;Asset not found&quot;)]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Throw_2" />
+              </If.Then>
+            </If>
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+    </TryCatch>
+    <TryCatch sap2010:Annotation.AnnotationText="Securely fetch or create and use a set of credentials.&#xA;&#xA;First, there is an attempt to fetch credentials from Orchestrator using the name received as argument. &#xA;If it is not possible to retrieve those credentials from Orchestrator, there is an attempt to fetch them from the Windows Credential Manager (WCM). &#xA;If the credentials are not defined in the WCM, the user is prompted to create the credentials that will be added to the WCM and returned for use during the process execution.&#xA;&#xA;The Private property is used to prevent the generation of logs that might contain information about the credentials." DisplayName="Private: Get Application Credentials" sap:VirtualizedContainerService.HintSize="524,658" sap2010:WorkflowViewState.IdRef="TryCatch_5">
       <TryCatch.Variables>
         <Variable x:TypeArguments="x:String" Name="StringPassword" />
       </TryCatch.Variables>
@@ -150,10 +185,10 @@
         </ui:GetRobotCredential>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_5">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="490,319" sap2010:WorkflowViewState.IdRef="Catch`1_5">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
@@ -161,7 +196,7 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="Exception" />
             </ActivityAction.Argument>
-            <If sap2010:Annotation.AnnotationText="The Private property is used to prevent the generation of logs that might contain information about the credentials." Condition="[out_Username Is Nothing Or out_Password Is Nothing]" DisplayName="Private: Fetch local credentials" sap:VirtualizedContainerService.HintSize="484,239" sap2010:WorkflowViewState.IdRef="If_7">
+            <If sap2010:Annotation.AnnotationText="The Private property is used to prevent the generation of logs that might contain information about the credentials." Condition="[out_Username Is Nothing Or out_Password Is Nothing]" DisplayName="Private: Fetch local credentials" sap:VirtualizedContainerService.HintSize="484,250" sap2010:WorkflowViewState.IdRef="If_7">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>

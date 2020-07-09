@@ -6,6 +6,8 @@
 
 	"OutlookCredentials" : "OutlookCredentials",
 	"Mailbox" : "Inbox",
+	"Recipient" : "MPotts@academytrainee.com",
+	"ReportTemplate" : "C:\\Users\\user\\Documents\\UiPath\\BlizzardAutomation\\Data\\Input\\reportEmailTemplate.txt",
 
 	"MaxRetryNumber" : 0,
 	"ExScreenshotsFolderPath" : "Exceptions_Screenshots",
