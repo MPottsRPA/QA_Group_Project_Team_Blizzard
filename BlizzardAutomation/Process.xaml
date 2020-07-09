@@ -75,7 +75,7 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:Comment DisplayName="Comment (placeholder)" sap:VirtualizedContainerService.HintSize="905,55" sap2010:WorkflowViewState.IdRef="Comment_1" Text="//  Invoke steps of the process" />
-    <If Condition="[DateTime.Now.ToString(&quot;HH&quot;).Equals(&quot;12&quot;) or DateTime.Now.ToString(&quot;HH&quot;).Equals(&quot;13&quot;)]" sap:VirtualizedContainerService.HintSize="905,475" sap2010:WorkflowViewState.IdRef="If_1">
+    <If Condition="[DateTime.Now.ToString(&quot;HH&quot;).Equals(in_EndOfDayHour.ToString) or DateTime.Now.ToString(&quot;HH&quot;).Equals((in_EndOfDayHour +1).ToString)]" sap:VirtualizedContainerService.HintSize="905,475" sap2010:WorkflowViewState.IdRef="If_1">
       <If.Then>
         <Sequence sap:VirtualizedContainerService.HintSize="526,327" sap2010:WorkflowViewState.IdRef="Sequence_5">
           <sap:WorkflowViewStateService.ViewState>
@@ -83,7 +83,7 @@
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <If Condition="[DateTime.Now.ToString(&quot;HH&quot;).Equals(&quot;13&quot;)]" sap:VirtualizedContainerService.HintSize="484,235" sap2010:WorkflowViewState.IdRef="If_3">
+          <If Condition="[DateTime.Now.ToString(&quot;HH&quot;).Equals((in_EndOfDayHour +1).ToString)]" sap:VirtualizedContainerService.HintSize="484,235" sap2010:WorkflowViewState.IdRef="If_3">
             <If.Else>
               <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke DataManipulation workflow" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="DataManipulation.xaml">
                 <ui:InvokeWorkflowFile.Arguments>

@@ -1,5 +1,5 @@
 {
-	"DatabaseFolder" : "Data\\Input\\",
+	"DatabaseFolder" : "C:\\Users\\user\\Documents\\UiPath\\BlizzardAutomation\\Data\\Input\\",
 	"PDFFolder" : "C:\\Users\\user\\Documents\\UiPath\\BlizzardAutomation\\Data\\Output\\",
 	"OrchestratorQueueName" : "CompanyList",
 	"logF_BusinessProcessName" : "Framework",
